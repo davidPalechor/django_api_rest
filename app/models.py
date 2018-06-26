@@ -6,7 +6,7 @@ class BasicInfo(models.Model):
     name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     tel = models.CharField(max_length=10, null=True)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     address = models.CharField(max_length=100)
 
 
